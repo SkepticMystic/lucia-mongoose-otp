@@ -1,0 +1,35 @@
+{
+  "name": "lucia-mongoose-otp",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "SkepticMystic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkepticMystic/lucia-mongoose-otp"
+  },
+  "scripts": {
+    "dev": "npx tsc -w",
+    "build": "npx tsc",
+    "publish": "npm run build && npm publish"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "peerDependencies": {
+    "lucia": "^2.5.0",
+    "mongoose": "^7.5.1"
+  },
+  "devDependencies": {
+    "lucia": "^2.5.0",
+    "mongoose": "^7.5.1",
+    "typescript": "^5.2.2"
+  }
+}
